@@ -7,6 +7,6 @@ jobs:
   printLog:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: print log
-      run: echo "Hello!"
+    steps:
+      - name: print log
+        run: echo "Hello!"
