@@ -10,5 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: steps name
-        run: echo ${{ github.event.pull_request.html_url }}
-        run: echo ${{ github.event.head_commit.message }}
+        run: |
+          echo ${{ github.event.pull_request.html_url }}
+          echo ${{ github.event.head_commit.message }}
