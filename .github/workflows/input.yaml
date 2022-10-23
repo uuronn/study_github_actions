@@ -35,7 +35,7 @@ jobs:
           echo "${SECRET_DATA}"
           echo "${FLAG_DATA}"
         env:
-          TEXT_DATA: ${{ github.event }}
+          TEXT_DATA: ${{ github.event.inputs.text }}
           OPTIONAL_DATA: ${{ github.event.inputs.optional }}
           SECRET_DATA: ${{ github.event.inputs.secret }}
           FLAG_DATA: ${{ github.event.inputs.flag }}
