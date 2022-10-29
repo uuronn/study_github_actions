@@ -1,4 +1,4 @@
-name: Show Pull Request Event
+name: Show PR Event
 
 on:
   pull_request:
