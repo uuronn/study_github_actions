@@ -6,7 +6,7 @@ interface ApiProps {
     title: string;
     subTitle: string;
   };
-  subIte: {
+  subItem: {
     title: string;
     subTitle: string;
   };
@@ -30,15 +30,6 @@ const Home: NextPage = () => {
     })();
   }, []);
 
-  //   useEffect(() => {
-  //     (async function () {
-  //       const data: any = await fetchPosts();
-
-  //       setPosts(data);
-  //       setIsLoading(false);
-  //     })();
-  //   }, []);
-
   useEffect(() => {
     if (!posts) return console.log("not posts");
     console.log("bbb", posts?.item.title);
@@ -50,6 +41,7 @@ const Home: NextPage = () => {
       <h1>Index page</h1>
       {isLoading && <h2>Loading...</h2>}
       <p>{posts?.item.title}</p>
+      <p>{posts?.subItem.title}</p>
     </>
   );
 };
